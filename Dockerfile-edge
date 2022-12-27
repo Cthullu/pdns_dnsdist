@@ -17,7 +17,7 @@ RUN mkdir -p /etc/dnsdist/conf.d
 COPY ./conf/dnsdist.conf /etc/dnsdist/dnsdist.conf
 
 # Adapt permissions
-RUN chown -R dnsdist:dnsdist /etc/dnsdist               \
+RUN chown -R root:dnsdist /etc/dnsdist               \
     && chmod 755 /etc/dnsdist /etc/dnsdist/conf.d       \
     && chmod 644 /etc/dnsdist/dnsdist.conf
 
