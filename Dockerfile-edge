@@ -1,5 +1,5 @@
 # Set base base image for following commands
-FROM alpine:sepisoad/alpine.edge-node-yarn
+FROM alpine:edge
 
 # Set environment variables
 ENV LC_ALL C.UTF-8
