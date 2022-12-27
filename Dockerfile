@@ -5,7 +5,7 @@ FROM alpine:3.17.0
 ENV LC_ALL C.UTF-8
 
 # Update all packages
-# Install BIND 9
+# Install PowerDNS dnsdist
 RUN apk -U --no-cache upgrade                           \
     && apk add --no-cache dnsdist                       \
     && rm -rf /var/cache/apk/*
